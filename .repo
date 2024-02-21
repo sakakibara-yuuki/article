@@ -1,0 +1,11 @@
+#!/bin/bash
+
+yymm=`date +%Y/%m`
+
+if [ ! -d yymm ]; then
+  mkdir -p $yymm
+fi
+
+today=`date +%d`
+
+vim ${yymm}/${today}.hpc.md
